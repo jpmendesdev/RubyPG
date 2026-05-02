@@ -26,7 +26,7 @@ class Enemy
     "
   end
 end
-
+#EASY ENEMIES
 class SlimeWorm < Enemy
   def initialize
     super(@name,@health_points,@difficult,@damage)
@@ -53,3 +53,5 @@ class StoneWatchMan < Enemy
     puts "sending rock!!!"
   end
 end
+
+#MEDIUM ENEMIES

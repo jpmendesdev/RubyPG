@@ -1,7 +1,9 @@
 class Player
-  attr_reader :name
-  attr_reader :damage 
-  attr_reader :health_points
+  attr_accessor :name
+  attr_accessor :health_points
+  attr_accessor :weapons
+  attr_accessor :level 
+  attr_accessor :damage 
   def initialize(name,health_points,weapons,level)
     @name = name
     @health_points = health_points
@@ -15,7 +17,7 @@ class Player
     Welcome #{@name} 
     Weapons: #{@weapons}
     ❤️ #{@health_points}
-    Level: #{@level}
+    🌟Level: #{@level}
     "
   end
 
