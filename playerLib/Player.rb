@@ -13,23 +13,23 @@ class Player
   end
 
   def to_s
-    "
-    Welcome #{@name} 
-    Weapons: #{@weapons}
-    ❤️ #{@health_points}
-    🌟Level: #{@level}
-    "
-  end
-
-  def attack
-    puts "Attacking"
+    "Welcome #{@name} Weapons: #{@weapons} ❤️ #{@health_points} 🌟Level: #{@level}"
   end
 
   def get_damage(enemy_damage)
-    @health_points -= enemy_damage
+    @health_points -= enemy_damage 
   end
 
-  def up_level()
-    @level += 1
+  def up_level
+    @level += 1 
   end
+
+  # def heavy_attack(enemy_health_points)
+  #   player_damage = @damage*2
+  #   enemy_health_points -= player_damage    
+  # end
+
+  # def fast_atacck
+  #   random = [true,false]
+  # end
 end

@@ -1,3 +1,3 @@
 RPG Game in Ruby
 
-To run the code just go to 'RPG_ruby/game.rb' and run 'ruby game.rb'
+To run the code just go to 'RPG_ruby/game_start.rb' and run 'ruby game_start.rb'
