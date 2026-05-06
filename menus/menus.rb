@@ -20,22 +20,16 @@ end
 def display_options
   if $game.players.empty?
       puts "1 - Create Player\n3 - Exit"
-  elsif $game.battles.empty?
-      puts "2 - Phases\n3 - Exit"
   else
-      puts "3 - Exit"
+      puts "2 - Go to Battle\n3 - Exit"
   end
 end
 
-def battle_menu
-    display_battle_informations()
-end
 
-def display_battle_informations
-    battle = $game.create_battle
-    $game.battles << battle
-    puts "\n1 - GO to  Battle\n2 - exit"
-    return if gets.chomp == '2'
-    $game.battles.first.display_battle_status
-    $game.battles.first.battle_round
+def battle_menu
+        battle = $game.create_battle
+        $game.battles << battle
+        $game.battles.first.display_battle_status
+        $game.battles.first.battle_round
+        $game.battles.clear
 end
