@@ -9,10 +9,6 @@ class Enemy
     @damage = 1
   end
 
-  def power()
-      puts "sending damage!!!"
-  end
-
   def get_damage(player_damage)
     @health_points -= player_damage
   end
